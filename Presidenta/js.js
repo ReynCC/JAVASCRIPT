@@ -9,36 +9,36 @@ function EsPrimo(numero) {
     
     for (var i = 2; i <= numero / 2; i++) {
       if (numero % i === 0) {
-        esPrimo = 0;
-        break;
+        esPrimo = 0 ;
+        break ;
       }
     }
     
-    return esPrimo === 1;
+    return esPrimo === 1 ;
   }
   
   function calcularSumaDigitos(numero) {
-    var suma = 0;
+    var suma = 0 ;
   
     while (numero > 0) {
-      suma += numero % 10;
-      numero = Math.floor(numero / 10);
+      suma += numero % 10 ;
+      numero = Math.floor(numero / 10) ;
     }
   
     return suma;
   }
   
-  var rangoMin = parseInt(prompt("Ingrese el número mínimo del rango:"));
-  var rangoMax = parseInt(prompt("Ingrese el número máximo del rango:"));
+  var rangoMin = parseInt(prompt("Ingresar rango A")) ;
+  var rangoMax = parseInt(prompt("Ingresar tango B")) ;
   
-  var numerosEspeciales = [];
+  var numerosEspeciales = [] ;
   
   for (var i = rangoMin; i <= rangoMax; i++) {
-    var sumaDigitos = calcularSumaDigitos(i);
+    var sumaDigitos = calcularSumaDigitos(i) ;
   
     if (EsPrimo(i) && EsPrimo(sumaDigitos)) {
-      numerosEspeciales.push(i);
+      numerosEspeciales.push(i) ;
     }
   }
   
-  document.write(numerosEspeciales.join(" "));
+  document.write(numerosEspeciales.join(" ")) ;
