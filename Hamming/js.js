@@ -1,5 +1,5 @@
-var numeroBinario1 = prompt("Ingrese el primer número binario:");
-var numeroBinario2 = prompt("Ingrese el segundo número binario:");
+var numeroBinario1 = prompt("ingresar numero binario");
+var numeroBinario2 = prompt("Ingresar segundo numero");
 
 var hamming = 0;
 
@@ -10,4 +10,3 @@ var hamming = 0;
   }
 
   document.write(numeroBinario1 + "<br>" + numeroBinario2 + " <br> " + hamming);
-
