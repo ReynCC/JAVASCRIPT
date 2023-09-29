@@ -23,12 +23,16 @@ const servidor = http.createServer((pedido, respuesta) => {
 
 servidor.listen(8888)
 
+function encaminar(){
+  
+}
+
 console.log('Servidor creado');
 
 //(Función para cambiar idioma del texto) De alguna manera tengo que hacer que la función reciba 
 //el texto del formulario y muestre en pantalla el resultado de la traducción.
 
-function IdiomaP(texto) {
+/*function IdiomaP(texto) {
   const vocales = 'aeiouAEIOU';
   let textoTraducido = '';
   
@@ -44,3 +48,4 @@ function IdiomaP(texto) {
   
   return textoTraducido;
 }
+*/
