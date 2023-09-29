@@ -1,9 +1,6 @@
 const http = require('http');
 const fs = require('fs');
 
-
-// no entendi exactamente como hacer que el node reciba el texto desde el html.
-
 const mime = {
   'html': 'text/html',
   'css': 'text/css',
@@ -12,6 +9,8 @@ const mime = {
   'mp3': 'audio/mpeg3',
   'mp4': 'video/mp4'
 }
+
+//codigo del ejemplo.
 
 const servidor = http.createServer((pedido, respuesta) => {
   const url = new URL('http://localhost:8888' + pedido.url)
